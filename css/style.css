@@ -1,0 +1,612 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+
+/* ==== RESET GENERAL ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+/* ==== FONDO CLARO ROSA 
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  background-image: url('../img/banner-3544296_1280.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}==== */
+
+/* ====body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8d7da; /* Rosa claro 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}==== */
+/* ====body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8d7da; /* Fondo rosa claro 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}==== */
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family:'Roboto', sans-serif;
+   font-size: 16px;
+  color: #333;
+  background-color: rgba(244, 225, 210, 0.9); /* Cremita con transparencia */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px; /* Espacio superior para el body */
+
+
+}
+
+
+
+
+/* ====.wrapper {
+  
+    width: 100%;
+    margin: auto;
+    padding: 40px;
+    background-color: rgba(244, 225, 210, 0.9); /* fondo crema con transparencia 
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }==== */
+
+ /* ==== .wrapper {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh;
+    background-color: rgba(244, 225, 210, 0.9); /* Cremita con un poco de transparencia 
+    background-image: url('../img/banner-3544296_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }==== */
+  /* ==== .wrapper {
+    width: 100%;
+    max-width: 1200px; /* Tamaño máximo del cuadrado 
+    min-height: 100vh;
+    background-color: rgba(244, 225, 210, 0.9); /* Cremita con transparencia 
+    background-image: url('img/banner-3544296_1280.jpg'); /* Imagen en el cuadrado 
+    background-size: cover; /* Que la imagen cubra todo el cuadrado 
+    background-position: center; /* Centrada la imagen 
+    background-repeat: no-repeat; /* Sin repetir la imagen 
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }==== */
+
+  /* ====.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh;
+    background-color: rgba(244, 225, 210, 0.9); /* Cremita con transparencia 
+    background-image: url('img/banner-3544296_1280.jpg'); /* Imagen en el cuadrado 
+    background-size: cover; /* Que la imagen cubra todo el cuadrado 
+    background-position: center; /* Centrada la imagen 
+    background-repeat: no-repeat; /* Sin repetir la imagen 
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    padding: 20px; /* Reducir padding 
+    display: flex;
+    flex-direction: column;
+  }==== */
+  .wrapper {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh;
+    background-color: rgba(244, 225, 210, 0.9); /* Cremita con transparencia */
+    background-color: #D2B48C; /* Color marrón claro (Beige) */
+    background-image: url('img/banner-3544296_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    padding: 20px; /* Reducir padding para ajustar espacio interior */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Reducir el margen inferior */
+  }
+  
+
+
+
+
+.wrapper.full-height {
+  height: 100vh; /* La imagen de fondo ocupará toda la pantalla */
+  min-height: 100vh; /* Asegura que la imagen se extienda por toda la ventana */
+}
+/* Opcional: si quieres que el contenedor sea más grande, ajusta la altura */
+.wrapper.large {
+  height: 700px; /* O la altura que prefieras */
+}
+
+/* Opcional: si quieres más separación entre la imagen y el contenido, ajustamos el padding */
+.wrapper .contenido-central {
+  position: relative; /* Para que el contenido esté sobre la imagen */
+  z-index: 1; /* Asegura que el contenido quede encima del fondo */
+}
+
+
+
+
+
+
+
+.logo {
+  display: flex;
+  justify-content: center; /* Centra el logo dentro del contenedor */
+  width: 100%; /* Hace que el contenedor ocupe todo el ancho */
+}
+
+/* ==== LOGO ==== */
+.logo img {
+  width: min(100%, 220px);
+  height: auto;
+}
+
+/* ==== ENCABEZADO ==== */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra todo el contenido en el eje horizontal */
+  gap: 10px; /* Separación pequeña entre logo y menú */
+  margin-bottom: 10px;
+}
+
+/* ==== MENÚ ==== */
+.menu {
+  display: flex;
+  justify-content: flex-start; /* Alinea el menú a la izquierda */
+  align-items: center;
+  gap: 30px; /* Mayor separación entre los enlaces */
+  flex-wrap: wrap;
+}
+
+.intro {
+ font-family: 'Lora', serif; /* Fuente Lora */  
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f4f1;
+    border-radius: 8px;
+    line-height: 1.7;
+    color: #333;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f4f1;
+  border-radius: 8px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .intro {
+    padding: 15px;
+  }
+}
+
+
+
+/* ==== ENLACES DEL MENÚ ==== */
+.menu a,
+.servicios-label {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.menu a:hover,
+.servicios-label:hover {
+  color: #004080;
+}
+
+/* ==== SUBMENÚ ==== */
+.menu-hamburguesa {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  padding: 10px;
+  min-width: 180px;
+  flex-direction: column;
+}
+
+.submenu a {
+  display: block;
+  padding: 8px 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.submenu a:hover {
+  background-color: #f1f1f1;
+}
+
+.submenu.open {
+  display: flex;
+}
+
+/* ==== CONTENIDO CENTRAL ==== */
+.contenido-central {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Reducir separación entre imagen y texto */
+  margin-top: 20px;
+}
+
+.contenido-central img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px; /* Reducir espacio debajo de la imagen */
+}
+
+h1 {
+  margin-top: 10px; /* Reducir espacio entre la imagen y el título */
+    text-align: center; /* Centra el texto */
+    font-size: 3rem; /* Tamaño grande */
+    color: #333; /* Color oscuro */
+    margin-bottom: 20px; /* Espacio debajo del título */
+  
+}
+
+/* ==== FOOTER ==== */
+footer {
+  /* eliminamos margin-top */
+  padding: 20px 10px;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  width: 100%;
+  z-index: 1;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ==== IMÁGENES ==== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .submenu {
+    position: static;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 5px 0;
+  }
+
+  .submenu a {
+    padding: 5px 10px;
+  }
+}
+
+.footer {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #333;
+  padding: 20px 10px;
+  font-size: 14px;
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent; /* Fondo transparente si lo prefieres */
+  font-family: 'Roboto', sans-serif; /* Asegúrate de que toda la tipografía sea Roboto */
+  
+}
+
+
+/* Estilo para el texto "Nuestros Medios de Contacto" */
+.uno {
+  font-weight: normal;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif; /* Aseguramos que este texto tenga la fuente Roboto */
+}
+
+/* Contenedor de íconos */
+.contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaciado entre los íconos */
+  margin-top: 10px;
+}
+
+/* Estilos para los íconos de redes sociales */
+.contenedor a {
+  font-size: 32px; /* Tamaño de los íconos */
+  transition: color 0.3s ease, transform 0.3s ease; /* Efecto de transición */
+}
+
+/* Efectos al pasar el ratón sobre los íconos */
+.contenedor a:hover {
+  transform: scale(1.2); /* Agrandar ligeramente el ícono */
+}
+
+/* Estilos específicos para cada red social */
+.facebook {
+  color: blue; /* Color para el ícono de Facebook */
+}
+
+.instagram {
+  color: palevioletred; /* Color para el ícono de Instagram */
+}
+
+.whatsapp {
+  color: green; /* Color para el ícono de WhatsApp */
+}
+
+/* Efecto hover específico para cada ícono */
+.facebook:hover {
+  color: darkblue; /* Color al pasar el ratón sobre el ícono de Facebook */
+}
+
+.instagram:hover {
+  color: #c71585; /* Color al pasar el ratón sobre el ícono de Instagram */
+}
+
+.whatsapp:hover {
+  color: darkgreen; /* Color al pasar el ratón sobre el ícono de WhatsApp */
+}
+
+/* ===== DERECHO CIVIL – ESTILOS EXCLUSIVOS ===== */
+
+/* ===================== */
+/* DERECHO CIVIL */
+/* ===================== */
+
+/* ===================== */
+/* DERECHO CIVIL */
+/* ===================== */
+
+.derecho-civil {
+  background-color: #e0cba8;
+  font-family: 'Roboto', sans-serif;
+  padding: 80px 20px; /* margen exterior */
+}
+
+.derecho-civil .wrapper {
+  background-color: white;
+  max-width: 900px;
+  margin: 40px auto; /* margen vertical extra */
+  padding: 60px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.derecho-civil .logo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.derecho-civil .contenido h1 {
+  font-family: 'Antic Didone', serif;
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.derecho-civil .contenido h2 {
+  font-family: 'Antic Didone', serif;
+  font-size: 2.4rem;
+  color: #444;
+  margin: 50px 0 25px;
+}
+
+.derecho-civil .contenido p {
+  font-size: 1.15rem;
+  color: #444;
+  margin-bottom: 25px;
+  text-align: justify;
+  line-height: 1.9;
+}
+
+.derecho-civil .contenido ul {
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.derecho-civil .contenido li {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.9;
+}
+
+/* Footer */
+.derecho-civil .footer {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  margin-top: 60px;
+  padding: 30px;
+  background-color: #e0cba8;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Redes sociales */
+.derecho-civil .contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.derecho-civil .contenedor a {
+  text-decoration: none;
+  font-size: 40px;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.derecho-civil .contenedor a:hover {
+  color: #004080;
+  transform: scale(1.1);
+}
+
+/* Hover effect en wrapper */
+.derecho-civil .wrapper:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ===================== */
+/* DERECHO LABORAL */
+/* ===================== */
+
+.derecho-laboral {
+  background-color: #e0cba8;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  padding: 80px 20px; /* Espacio arriba y abajo */
+}
+
+.derecho-laboral .wrapper {
+  background-color: white;
+  max-width: 900px;
+  margin: 40px auto; /* Centrado + espacio arriba y abajo */
+  padding: 60px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.derecho-laboral .logo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.derecho-laboral .contenido h1 {
+  font-family: 'Antic Didone', serif;
+  font-size: 3rem;
+  color: #5a3e2b;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.derecho-laboral .contenido h2 {
+  font-family: 'Antic Didone', serif;
+  font-size: 2.4rem;
+  color: #444;
+  margin: 50px 0 25px;
+}
+
+.derecho-laboral .contenido p {
+  font-size: 1.15rem;
+  color: #444;
+  line-height: 1.9;
+  text-align: justify;
+  margin-bottom: 25px;
+}
+
+.derecho-laboral .contenido ul {
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.derecho-laboral .contenido li {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.9;
+}
+
+.derecho-laboral .footer {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  margin-top: 60px;
+  padding: 30px;
+  background-color: #e0cba8;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.derecho-laboral .contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.derecho-laboral .contenedor a {
+  text-decoration: none;
+  font-size: 40px;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.derecho-laboral .contenedor a:hover {
+  color: #004080;
+  transform: scale(1.1);
+}
+
+.derecho-laboral .wrapper:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
